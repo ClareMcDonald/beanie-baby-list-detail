@@ -26,11 +26,20 @@ export function renderBabyDetail(baby) {
     const introDateEl = document.createElement('p');
 
     nameEl.textContent = baby.name;
-    animalEl.textContent = baby.animal;
-    birthdayEl.textContent = baby.birthday;
-    introDateEl.textContent = baby.introductionDate;
+    nameEl.classList.add('name');
+
+    animalEl.textContent = `Animal: ${baby.animal}`;
+    animalEl.classList.add('details');
+
+    birthdayEl.textContent = `Birthday: ${baby.birthday}`;
+    birthdayEl.classList.add('details');
+
+    introDateEl.textContent = `Introduction date: ${baby.introductionDate}`;
+    introDateEl.classList.add('details');
 
     img.src = `../assets/${baby.name}.png`;
+
+    div.classList.add('baby-detail');
         
     div.append(img, nameEl, animalEl, birthdayEl, introDateEl);
     

@@ -89,3 +89,21 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.baby-card img {
+    height: 200px;
+}
+
+.baby-detail img {
+    height: 300px;
+}
+
+.name {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 2em;
+}
+
+.details {
+    text-align: center;
+}
