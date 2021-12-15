@@ -94,6 +94,10 @@ footer {
     height: 200px;
 }
 
+a {
+    text-align: center;
+}
+
 .baby-detail img {
     height: 300px;
 }
