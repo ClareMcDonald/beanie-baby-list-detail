@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { renderBaby } from './render-utils.js';
+import { renderBabyCard } from './render-utils.js';
 import { getBabies } from './fetch-utils.js';
 
 const babyContainer = document.getElementById('beanie-baby-container');
@@ -15,7 +15,7 @@ window.addEventListener('load', async() => {
     const babies = await getBabies();
 
     for (let baby of babies) {
-        const babyEl = renderBaby(baby);
+        const babyEl = renderBabyCard(baby);
         babyContainer.append(babyEl);
     }
 });

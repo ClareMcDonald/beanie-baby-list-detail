@@ -11,3 +11,12 @@ export async function getBabies() {
         .select();
     return response.data;
 }
+
+export async function getBaby(id) {
+    const response = await client
+        .from('beanie babies')
+        .select()
+        .match({ id: id })
+        .single();
+    return response.data;
+}
