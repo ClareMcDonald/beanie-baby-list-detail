@@ -7,8 +7,8 @@ export function renderBabyCard(baby) {
     babyEl.classList.add('baby-card');
 
     nameEl.textContent = baby.name;
-    img.src =
-    a.href = 
+    img.src = `./assets/${baby.name}.png`;
+    a.href = `./detail/?id=${baby.id}`;
 
     babyEl.append(nameEl, img);
 
@@ -30,7 +30,7 @@ export function renderBabyDetail(baby) {
     birthdayEl.textContent = baby.birthday;
     introDateEl.textContent = baby.introductionDate;
 
-    img.src = 
+    img.src = `../assets/${baby.name}.png`;
         
     div.append(img, nameEl, animalEl, birthdayEl, introDateEl);
     
